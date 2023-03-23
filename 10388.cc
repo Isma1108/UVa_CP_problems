@@ -5,8 +5,8 @@ void solve() {
 	string s1, s2;
 	cin >> s1 >> s2;
 		
-	stack<char> fd_jane, fd_john;
-	string fu_jane, fu_john;
+	stack<char> fd_jane, fd_john; //face-down stack is useful there
+	string fu_jane, fu_john;			//face-up		vector is better in this case
 	
 	for (int i = s1.size() - 1; i >= 0; --i) {
 		fd_jane.push(s1[i]);
